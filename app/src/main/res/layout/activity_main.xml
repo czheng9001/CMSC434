@@ -10,8 +10,30 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="healthapp.cs.umd.edu.healthapp.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/general_button"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_width="wrap_content"
+        android:text="@string/general_name"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp" />
+
+    <Button
+        android:id="@+id/fitness_button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/fitness_name"
+        android:layout_above="@+id/general_button"
+        android:layout_alignStart="@+id/general_button"
+        android:layout_marginBottom="73dp" />
+
+    <Button
+        android:id="@+id/diet_button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/diet_name"
+        android:layout_above="@+id/fitness_button"
+        android:layout_alignStart="@+id/fitness_button"
+        android:layout_marginBottom="50dp" />
 </RelativeLayout>
